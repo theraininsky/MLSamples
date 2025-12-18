@@ -25,7 +25,7 @@ def InitializeRaft(preferredBackend: BackendPreference = Settings.defaultBackend
         case BackendPreference.OPENCL:
             device = torch.device('opencl');
     
-    state_dict = torch.load('models/raft-sintel.pth', map_location=device)
+    state_dict = torch.load(Settings.defaultRaftModelPath/"raft-sintel.pth", map_location=device)
     
     new_state_dict = {}
     for k, v in state_dict.items():

@@ -1,0 +1,3 @@
+[submodule "OptiTrack/src/external/RAFT"]
+	path = OptiTrack/src/external/RAFT
+	url = https://github.com/princeton-vl/RAFT.git
